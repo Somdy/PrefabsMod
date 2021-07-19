@@ -1,0 +1,25 @@
+{
+    "nemesismod:AbstractProject": {
+        "NAME": "None",
+        "MOVES": [
+            ""
+        ],
+        "DIALOG": [
+            ""
+        ]
+    },
+
+    "nemesismod:Voidremnant": {
+        "NAME": "虚空遗民",
+        "MOVES": [
+            "?...!",
+            "!...?",
+            "...??",
+            "...!!",
+            ""
+        ],
+        "DIALOG": [
+            ""
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CardDataSets>
+    <CardData id = "reckonings" prefix = "nemesismod:">
+        <SData sn = "76">
+            <id>FlashStrike</id>
+            <damage base = "6" prmt = "3"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>BASIC</rarity>
+            <tags>STARTER_STRIKE, STRIKE</tags>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+    </CardData>
+</CardDataSets>

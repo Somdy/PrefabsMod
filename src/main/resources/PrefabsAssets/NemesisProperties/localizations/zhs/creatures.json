@@ -1,0 +1,63 @@
+{
+    "dwlrmod:AbstractDwlrMonster": {
+        "NAME": "Unknown",
+        "FLAVOR": "No Flavors",
+        "DESC": "None",
+        "MOVES": [
+            ""
+        ],
+        "SPEECHES": [
+            ""
+        ]
+    },
+
+    "dwlrmod:SpiderCocoon": {
+        "NAME": "蜘蛛巢",
+        "FLAVOR": "“污秽与邪恶的巢穴.” ——温蒂",
+        "DESC": "TODO",
+        "MOVES": [
+            "发展",
+            "扩散",
+            ""
+        ],
+        "SPEECHES": [
+            ""
+        ]
+    },
+
+    "dwlrmod:SpiderBasic": {
+        "NAME": "蜘蛛",
+        "FLAVOR": "“我恨蜘蛛.” ——威尔逊",
+        "DESC": "TODO",
+        "MOVES": [
+            ""
+        ],
+        "SPEECHES": [
+            ""
+        ]
+    },
+
+    "dwlrmod:CrawlingHorror": {
+        "NAME": "爬行梦魇",
+        "FLAVOR": "“我不知道它们想要什么.它们...它们就只是看着.” ——麦斯威尔",
+        "DESC": "TODO",
+        "MOVES": [
+            ""
+        ],
+        "SPEECHES": [
+            ""
+        ]
+    },
+
+    "dwlrmod:Terrorbeak": {
+        "NAME": "巨喙梦魇",
+        "FLAVOR": "“我不知道它们想要什么.它们...它们就只是看着.” ——麦斯威尔",
+        "DESC": "TODO",
+        "MOVES": [
+            ""
+        ],
+        "SPEECHES": [
+            ""
+        ]
+    }
+}

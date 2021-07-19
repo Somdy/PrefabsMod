@@ -1,0 +1,55 @@
+{
+    "nemesismod:OldCenser": {
+        "NAME": "老香炉",
+        "FLAVOR": "香炉散发的熏香让你觉得死亡不再是一件可怕的事——毕竟只有死人才能闻到这香气.",
+        "DESCRIPTIONS": [
+            "每场战斗你第一次受到非自身的伤害时,获得 #b5 层 #ynemesismod:灵体 .",
+            ""
+        ]
+    },
+
+    "nemesismod:EnigmaticCenser": {
+        "NAME": "上古香炉",
+        "FLAVOR": "古代生物的尸骨在里面烧了很长一段时间,到现在都还没烧完.",
+        "DESCRIPTIONS": [
+            "你在每个回合打出第 #b5 张牌时,如果拥有的 #ynemesismod:灵体 少于 #b2 ,获得 #b5 层 #ynemesismod:灵体 .",
+            ""
+        ]
+    },
+
+    "nemesismod:DecadentHomiliary": {
+        "NAME": "怖道者·A",
+        "FLAVOR": "“众神之父会赐予你重伤倒地,风之所向将指引你重伤倒地.”",
+        "DESCRIPTIONS": [
+            "你给予任意目标非 #ynemesismod:腐朽 负面效果时,同时给予 #b[amount_0] 层 #y腐朽 .",
+            ""
+        ]
+    },
+
+    "nemesismod:SearingHomiliary": {
+        "NAME": "怖道者·B",
+        "FLAVOR": "“众神之父会赐予你重伤倒地,风之所向将指引你重伤倒地.”",
+        "DESCRIPTIONS": [
+            "你的攻击会同时给予目标 #b[amount_0] 层 #ynemesismod:业火 , #ynemesismod:突破 时会额外给予 #b1 层.",
+            ""
+        ]
+    },
+
+    "nemesismod:OfferingHomiliary": {
+        "NAME": "怖道者·C",
+        "FLAVOR": "“众神之父会赐予你重伤倒地,风之所向将指引你重伤倒地.”",
+        "DESCRIPTIONS": [
+            "战斗开始时,将 #b[amount_0] 张随机 #y祭品 牌的 #ynemesismod:临时复制 置入你的弃牌堆.",
+            ""
+        ]
+    },
+
+    "nemesismod:BloodyHomiliary": {
+        "NAME": "怖道者·D",
+        "FLAVOR": "“众神之父会赐予你重伤倒地,风之所向将指引你重伤倒地.”",
+        "DESCRIPTIONS": [
+            "你在战斗中的回血效果减少 #b25% .每场战斗开始时,使你所有职业攻击牌获得 #yprefabmod:吸血 .",
+            ""
+        ]
+    }
+}

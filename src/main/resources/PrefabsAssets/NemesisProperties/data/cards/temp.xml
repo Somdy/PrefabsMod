@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CardDataSets>
+    <CardData id = "temp" prefix = "nemesismod:">
+        <SData sn = "180"><!--ALL TEMP CARDS START FROM 180!-->
+            <id>RottenBone</id>
+            <magics base = "6"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL ENEMY</target>
+            <rarity>SPECIAL</rarity>
+        </SData>
+        <SData sn = "181">
+            <id>Multinstances</id>
+            <magics base = "2"/>
+            <cost base = "-1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>SPECIAL</rarity>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+    </CardData>
+</CardDataSets>

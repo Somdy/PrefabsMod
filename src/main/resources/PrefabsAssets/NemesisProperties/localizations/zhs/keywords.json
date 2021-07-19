@@ -1,0 +1,168 @@
+{
+    "nemesismod:Enchant": {
+        "PROPER_NAME": "魔化",
+        "NAMES": [
+            "魔化",
+            "魔化的"
+        ],
+        "DESCRIPTION": "魔化的卡牌具有 #r特殊的 额外效果.通常情况下魔化的卡牌被使用一次后就会失去魔化的效果."
+    },
+
+    "nemesismod:Wither": {
+        "PROPER_NAME": "枯萎(X)",
+        "NAMES": [
+            "可枯萎",
+            "已枯萎"
+        ],
+        "DESCRIPTION": "打出时使手牌中最多X张耗能较低随机牌的所有基础数值增加 #b1 点,X减少相应的数量.X减为0时此卡所有基础数值减半,耗能变为0并失去前一效果."
+    },
+
+    "nemesismod:Unblocked": {
+        "PROPER_NAME": "突破",
+        "NAMES": [
+            "突破",
+            "被突破"
+        ],
+        "DESCRIPTION": "对目标造成至少1点未被 #y格挡 的伤害."
+    },
+
+    "nemesismod:Hellfire": {
+        "PROPER_NAME": "业火",
+        "NAMES": [
+            "业火"
+        ],
+        "DESCRIPTION": "具有业火的生物在回合结束时受到 #b2 点伤害.每层业火会将这个伤害提高 #b25% .业火造成的伤害被 #y格挡 时,失去一半层数."
+    },
+
+    "nemesismod:Psychic": {
+        "PROPER_NAME": "灵体",
+        "NAMES": [
+            "灵体"
+        ],
+        "DESCRIPTION": "拥有的灵体越多,受到的伤害越少.最多拥有 #b10 层灵体.灵体会在你的回合开始时及某些情况下失去一部分或是全部."
+    },
+
+    "nemesismod:Offer": {
+        "PROPER_NAME": "献祭",
+        "NAMES": [
+            "被献祭",
+            "献祭"
+        ],
+        "DESCRIPTION": "将所选卡牌放到祭品位,这些牌会在几个回合后 #y消耗 .如果是选择的是祭品卡,在献祭和献祭完成的回合会触发其效果一次."
+    },
+
+    "nemesismod:OfferingEffect": {
+        "PROPER_NAME": "遗愿",
+        "NAMES": [
+            "遗愿",
+            ""
+        ],
+        "DESCRIPTION": "具有遗愿的卡牌被献祭后在献祭完成时触发遗愿效果."
+    },
+
+    "nemesismod:TotemOffering": {
+        "PROPER_NAME": "图腾祭品",
+        "NAMES": [
+            "图腾祭品",
+            "图腾",
+            ""
+        ],
+        "DESCRIPTION": "被献祭时会停留在祭品位上而不消耗.在祭品位时,图腾能够触发特殊的效果.在祭品位满时进行献祭会将可破坏的图腾破坏."
+    },
+
+    "nemesismod:UndeadOffering": {
+        "PROPER_NAME": "不死祭品",
+        "NAMES": [
+            "不死祭品",
+            "不死",
+            ""
+        ],
+        "DESCRIPTION": "被献祭消耗后会将 #b1 张全新的复制品洗入抽牌堆并触发 #r特殊 的效果."
+    },
+
+    "nemesismod:DivineOffering": {
+        "PROPER_NAME": "神祗祭品",
+        "NAMES": [
+            "神祗祭品",
+            "神祗",
+            ""
+        ],
+        "DESCRIPTION": "被献祭时会触发 #r特殊 的效果并且不会被消耗而是直接移出战斗."
+    },
+
+    "nemesismod:Frantic": {
+        "PROPER_NAME": "狂躁",
+        "NAMES": [
+            "狂躁",
+            "狂躁的",
+            ""
+        ],
+        "DESCRIPTION": "抽到时有一定概率 #y自动打出 并消耗一半的 #g能量 .自动打出的概率取决于诸多因素,其中 #r你的血量 是 #y重要 因素之一."
+    },
+
+    "nemesismod:Haunted": {
+        "PROPER_NAME": "纠缠",
+        "NAMES": [
+            "纠缠",
+            ""
+        ],
+        "DESCRIPTION": "回合结束及回合开始时,此卡如果在弃牌堆,则会返回手牌并使你获得 #b1 种 #r特有 的 #y被纠缠 效果."
+    },
+
+    "nemesismod:Leech": {
+        "PROPER_NAME": "吸血",
+        "NAMES": [
+            "吸血",
+            ""
+        ],
+        "DESCRIPTION": "此卡造成的未被 #y格挡 伤害量的一半会为你回复等量的生命值."
+    },
+
+    "nemesismod:Decay": {
+        "PROPER_NAME": "腐朽",
+        "NAMES": [
+            "腐朽",
+            "腐朽的",
+            ""
+        ],
+        "DESCRIPTION": "腐朽的生物在进行攻击时失去等同于腐朽层数的生命值并失去一半的腐朽."
+    },
+
+    "nemesismod:Paralytic": {
+        "PROPER_NAME": "麻木",
+        "NAMES": [
+            "麻木",
+            "麻木的",
+            ""
+        ],
+        "DESCRIPTION": "麻木的生物受到的攻击伤害增加 #b2 点.每层麻木会将这个数值增加 #b10% .麻木的生物在失去生命值时会少失去生命值."
+    },
+
+    "nemesismod:Teleperceive": {
+        "PROPER_NAME": "感知",
+        "NAMES": [
+            "感知",
+            ""
+        ],
+        "DESCRIPTION": "从特定牌堆中将符合条件的随机或指定牌置入手牌."
+    },
+
+    "nemesismod:ChooseOne": {
+        "PROPER_NAME": "抉择",
+        "NAMES": [
+            "抉择:",
+            "抉择",
+            ""
+        ],
+        "DESCRIPTION": "从几种效果中选择1种触发."
+    },
+
+    "nemesismod:TemporaryCopy": {
+        "PROPER_NAME": "临时复制",
+        "NAMES": [
+            "临时复制",
+            ""
+        ],
+        "DESCRIPTION": "临时复制的牌具有 #y虚无 并在打出后从本次战斗中移除."
+    }
+}

@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CardDataSets>
+    <CardData id = "general" prefix = "nemesismod:">
+        <SData sn = "1">
+            <id>FlashStrike</id>
+            <damage base = "6" prmt = "3"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>BASIC</rarity>
+            <tags>STARTER_STRIKE, STRIKE</tags>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "2">
+            <id>IllusiveShield</id>
+            <block base = "5" prmt = "3"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>BASIC</rarity>
+            <tags>STARTER_DEFEND</tags>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "3">
+            <id>Scorch</id>
+            <damage base = "13" prmt = "3"/>
+            <magics base = "0" prmt = "1"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ALL ENEMY</target>
+            <rarity>BASIC</rarity>
+        </SData>
+        <SData sn = "4">
+            <id>Metamorphose</id>
+            <magics base = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>BASIC</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+            <prmtAttrs>
+                <exhaust>false</exhaust>
+            </prmtAttrs>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "5">
+            <id>SurrealMemoir</id>
+            <magics base = "3" prmt = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>BASIC</rarity>
+            <attributes>
+                <selfRetain>true</selfRetain>
+            </attributes>
+            <customs>
+                <ExMagicNum base = "5"/>
+            </customs>
+        </SData>
+        <SData sn = "6">
+            <id>DreadCome</id>
+            <damage base = "2"/>
+            <cost base = "2" prmtNew = "1"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "7">
+            <id>Cultivate</id>
+            <magics base = "1"/>
+            <cost base = "0"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>COMMON</rarity>
+        </SData>
+        <SData sn = "8">
+            <id>DivineWrath</id>
+            <damage base = "8"/>
+            <magics base = "3"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <WitherNum base = "2" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "9">
+            <id>Vanish</id>
+            <magics base = "3"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>COMMON</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "10">
+            <id>CoercedGiving</id>
+            <magics base = "4"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "11">
+            <id>FoulBlood</id>
+            <damage base = "2" prmt = "3"/>
+            <magics base = "1"/>
+            <cost base = "0"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>COMMON</rarity>
+        </SData>
+        <SData sn = "12">
+            <id>TaintedPotion</id>
+            <magics base = "1"/>
+            <cost base = "1" prmtNew = "0"/>
+            <type>SKILL</type>
+            <target>ALL ENEMY</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "13">
+            <id>MindRot</id>
+            <magics base = "3"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL ENEMY</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "4" prmt = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "14">
+            <id>Ghoscythe_Bouncing</id>
+            <damage base = "6" prmt = "2"/>
+            <magics base = "2"/>
+            <cost base = "1" prmtNew = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>COMMON</rarity>
+        </SData>
+        <SData sn = "15">
+            <id>Weirnelon</id>
+            <magics base = "3" prmt = "-2"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "3"/>
+            </customs>
+        </SData>
+        <SData sn = "16">
+            <id>Firebolt</id>
+            <damage base = "6" prmt = "2"/>
+            <magics base = "3"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <frantic>true</frantic>
+            </customs>
+        </SData>
+        <SData sn = "17">
+            <id>IncendiaryDelight</id>
+            <damage base = "8"/>
+            <magics base = "3" prmt = "-1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "18">
+            <id>TraitorCloak</id>
+            <block base = "13" prmt = "3"/>
+            <magics base = "3" prmt = "1"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "19">
+            <id>EvilCollar</id>
+            <magics base = "1"/>
+            <cost base = "0"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "20">
+            <id>GateOfFire</id>
+            <magics base = "4"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL ENEMY</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "5"/>
+            </customs>
+        </SData>
+        <SData sn = "21">
+            <id>PhantasmicMark</id>
+            <block base = "2" prmt = "1"/>
+            <magics base = "1" prmt = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <!--SData sn = "22">
+            <id>Spectralize</id>
+            <magics base = "4" prmt = "1"/>
+            <cost base = "0"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData!-->
+        <SData sn = "22">
+            <id>BloodyBlades</id>
+            <magics base = "3"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "23">
+            <id>OfferInFlesh</id>
+            <damage base = "14" prmt = "2"/>
+            <magics base = "3"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "3"/>
+            </customs>
+        </SData>
+        <SData sn = "24">
+            <id>PretendToEscape</id>
+            <magics base = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "5"/>
+            </customs>
+        </SData>
+        <SData sn = "25">
+            <id>BloodySlaughter</id>
+            <damage base = "6"/>
+            <magics base = "3"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <tags>LEECH</tags>
+            <customs>
+                <ExMagicNum base = "1" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "26">
+            <id>SearingSaw</id>
+            <damage base = "9"/>
+            <magics base = "4"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "27">
+            <id>LostPuppet</id>
+            <magics base = "3"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+        </SData>
+        <SData sn = "28">
+            <id>StubbornDefense</id>
+            <block base = "16" prmt = "4"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "29">
+            <id>SpectralDeluge</id>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>RARE</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+        </SData>
+        <SData sn = "30">
+            <id>PourOnFlames</id>
+            <cost base = "2"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <ethereal>true</ethereal>
+            </attributes>
+        </SData>
+        <SData sn = "31">
+            <id>CripplingFears</id>
+            <magics base = "4"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>ALL ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "32">
+            <id>HauntingVision</id>
+            <magics base = "4"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "33">
+            <id>BitterRevelation</id>
+            <damage base = "14" prmt = "4"/>
+            <magics base = "4"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>SELF AND ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <tags>LEECH</tags>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "34">
+            <id>MindDrain</id>
+            <magics base = "2"/>
+            <cost base = "0"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <tags>LEECH</tags>
+        </SData>
+        <SData sn = "35">
+            <id>Warlike</id>
+            <magics base = "2" prmt = "1"/>
+            <cost base = "1"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "1" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "36">
+            <id>ScorchingHeat</id>
+            <damage base = "8"/>
+            <cost base = "1" prmtNew = "0"/>
+            <type>ATTACK</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "37">
+            <id>RottenInside</id>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+        </SData>
+        <SData sn = "38">
+            <id>Overhedge</id>
+            <magics base = "1" prmt = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "4" prmt = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "39">
+            <id>CastawayWeapon</id>
+            <damage base = "10"/>
+            <block base = "8"/>
+            <magics base = "0" prmt = "5"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <WitherNum base = "4"/>
+            </customs>
+        </SData>
+        <SData sn = "40">
+            <id>RunicCollar</id>
+            <block base = "10"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>SELF AND ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "41">
+            <id>EtherealPain</id>
+            <block base = "12"/>
+            <magics base = "5"/>
+            <cost base = "0"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "4"/>
+            </customs>
+        </SData>
+        <SData sn = "42">
+            <id>BoundInDeath</id>
+            <magics base = "3" prmt = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <ethereal>true</ethereal>
+                <exhaust>true</exhaust>
+            </attributes>
+        </SData>
+        <SData sn = "43">
+            <id>DeathInvoker</id>
+            <misc value = "16"/>
+            <magics base = "3" prmt = "1"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+        </SData>
+        <SData sn = "44">
+            <id>LeafOnWater</id>
+            <magics base = "2"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "45">
+            <id>DirtyBlood</id>
+            <damage base = "10"/>
+            <magics base = "3"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ALL ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "46">
+            <id>Overflow</id>
+            <magics base = "3"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <frantic>true</frantic>
+            </customs>
+        </SData>
+        <SData sn = "47">
+            <id>Ghoscythe_MagicAbsorb</id>
+            <damage base = "5"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "48">
+            <id>GateOfForge</id>
+            <magics base = "12"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "49">
+            <id>SiphonEnergy</id>
+            <magics base = "4"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "50">
+            <id>GoldenApple</id>
+            <block base = "12"/>
+            <magics base = "2"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "4"/>
+            </customs>
+        </SData>
+        <SData sn = "51">
+            <id>WickedMask</id>
+            <magics base = "8"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "52">
+            <id>Cacophony</id>
+            <damage base = "4"/>
+            <magics base = "3"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "53">
+            <id>Carrion</id>
+            <magics base = "2" prmt = "1"/>
+            <cost base = "1"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <prmtAttrs>
+                <innate>true</innate>
+            </prmtAttrs>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "54">
+            <id>Ghosting</id>
+            <cost base = "-1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <prmtAttrs>
+                <exhaust>true</exhaust>
+            </prmtAttrs>
+        </SData>
+        <SData sn = "55">
+            <id>TwistReality</id>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>ENEMY</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+            <customs>
+                <prmtFrantic>true</prmtFrantic>
+            </customs>
+        </SData>
+        <SData sn = "56">
+            <id>ErraticPhantasm</id>
+            <magics base = "3" prmt = "1"/>
+            <block base = "10"/>
+            <cost base = "2"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>RARE</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "57">
+            <id>SelfishDevotion</id>
+            <magics base = "4" prmt = "2"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>RARE</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+            <customs>
+                <ExMagicNum base = "1" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "58">
+            <id>TemporalIsolation</id>
+            <magics base = "2" prmt = "1"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>RARE</rarity>
+            <attributes>
+                <ethereal>true</ethereal>
+            </attributes>
+        </SData>
+        <SData sn = "59">
+            <id>EidolonForm</id>
+            <magics base = "1" prmt = "1"/>
+            <cost base = "3"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>RARE</rarity>
+        </SData>
+        <SData sn = "60">
+            <id>NamesOfGods</id>
+            <damage base = "8"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>RARE</rarity>
+            <customs>
+                <ExMagicNum base = "3"/>
+            </customs>
+        </SData>
+        <SData sn = "61">
+            <id>RustyObelish</id>
+            <magics base = "3"/>
+            <cost base = "1" prmtNew = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>RARE</rarity>
+        </SData>
+        <SData sn = "62">
+            <id>CorruptorDisguise</id>
+            <damage base = "10"/>
+            <block base = "18"/>
+            <magics base = "4"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>RARE</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+                <WitherNum base = "5" prmt = "1"/>
+            </customs>
+        </SData>
+        <SData sn = "63">
+            <id>ColdBlooded</id>
+            <magics base = "1"/>
+            <cost base = "1"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>RARE</rarity>
+            <customs>
+                <ExMagicNum base = "3"/>
+            </customs>
+        </SData>
+        <SData sn = "64">
+            <id>RuleOfSacrifice</id>
+            <cost base = "0"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+            <prmtAttrs>
+                <exhaust>true</exhaust>
+            </prmtAttrs>
+        </SData>
+        <SData sn = "65">
+            <id>ExileToTheVoid</id>
+            <cost base = "4" prmtNew = "3"/>
+            <type>SKILL</type>
+            <target>ENEMY</target>
+            <rarity>RARE</rarity>
+            <tags>ROOTED</tags>
+        </SData>
+        <SData sn = "66">
+            <id>SpectralCorporeity</id>
+            <cost base = "1"/>
+            <magics base = "7" prmt = "3"/>
+            <type>POWER</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "67">
+            <id>Desperation</id>
+            <cost base = "1"/>
+            <magics base = "10" prmt = "2"/>
+            <type>SKILL</type>
+            <target>ALL</target>
+            <rarity>UNCOMMON</rarity>
+            <attributes>
+                <ethereal>true</ethereal>
+            </attributes>
+            <prmtAttrs>
+                <exhaust>true</exhaust>
+                <ethereal>false</ethereal>
+            </prmtAttrs>
+        </SData>
+        <SData sn = "68">
+            <id>OfferingManagement</id>
+            <magics base = "2" prmt = "1"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>COMMON</rarity>
+        </SData>
+        <SData sn = "69">
+            <id>Impatience</id>
+            <magics base = "2" prmt = "1"/>
+            <cost base = "0"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>UNCOMMON</rarity>
+        </SData>
+        <SData sn = "70">
+            <id>Ghoscythe_Cursed</id>
+            <damage base = "6" prmt = "2"/>
+            <magics base = "4" prmt = "1"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>COMMON</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "71">
+            <id>Soultaker</id>
+            <damage base = "5" prmt = "4"/>
+            <magics base = "6" prmt = "2"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ENEMY</target>
+            <rarity>RARE</rarity>
+            <customs>
+                <ExMagicNum base = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "72">
+            <id>WoundedBasalt</id>
+            <magics base = "6" prmt = "4"/>
+            <cost base = "1"/>
+            <type>ATTACK</type>
+            <target>ALL ENEMY</target>
+            <rarity>RARE</rarity>
+            <attributes>
+                <exhaust>true</exhaust>
+            </attributes>
+            <customs>
+                <ExMagicNum base = "6" prmt = "2"/>
+            </customs>
+        </SData>
+        <SData sn = "73">
+            <id>ReviveTheDead</id>
+            <magics base = "3" prmt = "1"/>
+            <cost base = "2"/>
+            <type>SKILL</type>
+            <target>NONE</target>
+            <rarity>RARE</rarity>
+            <prmtAttrs>
+                <exhaust>true</exhaust>
+            </prmtAttrs>
+        </SData>
+        <SData sn = "74">
+            <id>DeadmanTotem</id>
+            <block base = "18" prmt = "8"/>
+            <magics base = "2" prmt = "3"/>
+            <cost base = "1"/>
+            <type>SKILL</type>
+            <target>SELF</target>
+            <rarity>RARE</rarity>
+            <attributes>
+                <selfRetain>true</selfRetain>
+            </attributes>
+        </SData>
+        <SData sn = "75">
+            <id>Ghoscythe_Powered</id>
+            <damage base = "12" prmt = "2"/>
+            <magics base = "2" prmt = "2"/>
+            <cost base = "2"/>
+            <type>ATTACK</type>
+            <target>ALL ENEMY</target>
+            <rarity>RARE</rarity>
+        </SData>
+    </CardData>
+</CardDataSets>

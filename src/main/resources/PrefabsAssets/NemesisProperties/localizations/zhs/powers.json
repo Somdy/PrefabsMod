@@ -1,0 +1,216 @@
+{
+    "nemesismod:Psychic": {
+        "NAME": "灵体",
+        "DESCRIPTIONS": [
+            "你",
+            "受到的任何伤害减少 #b",
+            "% .回合开始时失去 #b",
+            " 层."
+        ]
+    },
+
+    "nemesismod:Hellfire": {
+        "NAME": "业火",
+        "DESCRIPTIONS": [
+            "你",
+            "在回合开始时受到 #b",
+            " 点伤害."
+        ]
+    },
+
+    "nemesismod:Decay": {
+        "NAME": "腐朽",
+        "DESCRIPTIONS": [
+            "你",
+            "在进行攻击时失去 #b",
+            " 点生命值,然后 #y腐朽 层数减半."
+        ]
+    },
+
+    "nemesismod:Paralytic": {
+        "NAME": "麻木",
+        "DESCRIPTIONS": [
+            "你",
+            "受到的攻击伤害增加 #b",
+            " 点.并且每次失去生命值时少失去 #b",
+            "% .每次失去生命值时, #y麻木 减少 #b1/3 层."
+        ]
+    },
+
+    "nemesismod:DelayGainStrength": {
+        "NAME": "延长镣铐",
+        "DESCRIPTIONS": [
+            "你",
+            "在 #b",
+            " 个回合后,回合结束时回复 #b",
+            " 点 #y力量 ."
+        ]
+    },
+
+    "nemesismod:DamageLimited": {
+        "NAME": "伤害限制",
+        "DESCRIPTIONS": [
+            "你",
+            "造成的伤害减少 #b",
+            " %.",
+            " 点.",
+            "持续 #b",
+            " 个回合."
+        ]
+    },
+
+    "nemesismod:PhantasmicMark": {
+        "NAME": "鬼影印",
+        "DESCRIPTIONS": [
+            "御敌",
+            "追杀",
+            "你每打出1张牌,",
+            "获得 #b",
+            " 点 #y格挡 .",
+            "你",
+            "在回合开始时,受到 #b",
+            " 点伤害.",
+            "持续 #b",
+            " 回合."
+        ]
+    },
+
+    "nemesismod:PourOnFlames": {
+        "NAME": "火上浇油",
+        "DESCRIPTIONS": [
+            "你",
+            "所施加的 #y业火 ,在",
+            "的回合结束时,自增 #b",
+            " 层.",
+            ""
+        ]
+    },
+
+    "nemesismod:HauntedVision": {
+        "NAME": "幻视",
+        "DESCRIPTIONS": [
+            "你对每回合抽到的前 #b",
+            " 张牌出现 #r不可预测 的幻视.",
+            ""
+        ]
+    },
+
+    "nemesismod:LoseHPNextTurn": {
+        "NAME": "下回合失去生命值",
+        "DESCRIPTIONS": [
+            "你",
+            "的下回合开始时,失去 #b",
+            " 点生命值."
+        ]
+    },
+
+    "nemesismod:DamageNextTurn": {
+        "NAME": "下回合受到伤害",
+        "DESCRIPTIONS": [
+            "你",
+            "的下回合开始时,受到 #b",
+            " 点伤害."
+        ]
+    },
+
+    "nemesismod:DeathBoundMark": {
+        "NAME": "冥印",
+        "DESCRIPTIONS": [
+            "你",
+            "如果 #b",
+            " 个回合内仍然存活,则在本场战斗接下来的时间里受到的任何伤害降为0.",
+            "受到的伤害增加 #b",
+            " %.",
+            "受到的任何伤害为 #b0 ."
+        ]
+    },
+
+    "nemesismod:AdvancedVulnerable": {
+        "NAME": "易伤",
+        "DESCRIPTIONS": [
+            "你",
+            "受到的攻击伤害增加 #b",
+            " %."
+        ]
+    },
+
+    "nemesismod:Carrion": {
+        "NAME": "发烂",
+        "DESCRIPTIONS": [
+            "#y腐朽 在造成伤害后少损失 #b",
+            " 层."
+        ]
+    },
+
+    "nemesismod:Multinstances": {
+        "NAME": "多体",
+        "DESCRIPTIONS": [
+            "你",
+            "在回合开始时,获得 #b",
+            " 层 #y灵体 .持续 #b",
+            " 回合."
+        ]
+    },
+
+    "nemesismod:GainEnergyAtTurnStart": {
+        "NAME": "蓄能",
+        "DESCRIPTIONS": [
+            "你在回合开始时,获得",
+            ".持续 #b",
+            " 回合."
+        ]
+    },
+
+    "nemesismod:PuppetHealer": {
+        "NAME": "复苏",
+        "DESCRIPTIONS": [
+            "回合开始时,回复 #b",
+            " 点生命值,持续 #b",
+            " 回合."
+        ]
+    },
+
+    "nemesismod:Overflow": {
+        "NAME": "魔能溢出",
+        "DESCRIPTIONS": [
+            "#y魔化 抽到的下 #b",
+            " 张牌."
+        ]
+    },
+
+    "nemesismod:ErraticPhantasm": {
+        "NAME": "古怪体质",
+        "DESCRIPTIONS": [
+            "你",
+            "在回合开始时,获得 #b",
+            " 层 #y灵体 .",
+            "无法获得任何 #y格挡 ."
+        ]
+    },
+
+    "nemesismod:EidolonForm": {
+        "NAME": "幻影形态",
+        "DESCRIPTIONS": [
+            "你只能在没有负面效果时才能打出被 #y魔化 的牌.",
+            "只有在你没有负面效果时, nemesismod:魔化 效果才会触发."
+        ]
+    },
+
+    "nemesismod:ColdBlooded": {
+        "NAME": "冷血天性",
+        "DESCRIPTIONS": [
+            "在你打出1张具有 #y吸血 的牌后, #y感知 你抽牌堆中 #b",
+            " 张具有 #y吸血 的随机牌.",
+            "如果没有,则受到 #b",
+            " 点伤害."
+        ]
+    },
+
+    "nemesismod:RuleOfSacrifice": {
+        "NAME": "祭拜之礼",
+        "DESCRIPTIONS": [
+            "本回合,在你 #y献祭 1张牌后,尝试对1名敌人打出1张被献祭牌的复制.",
+            "本回合,在你 #y献祭 1张牌后,尝试对所有敌人打出1张被献祭牌的复制."
+        ]
+    }
+}

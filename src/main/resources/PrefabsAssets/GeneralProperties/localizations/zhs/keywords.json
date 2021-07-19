@@ -1,0 +1,19 @@
+{
+    "prefabmod:Leech": {
+        "PROPER_NAME": "吸血",
+        "NAMES": [
+            "吸血",
+            ""
+        ],
+        "DESCRIPTION": "此卡造成的未被 #y格挡 伤害量的一半会为你回复等量的生命值."
+    },
+
+    "prefabmod:Rooted": {
+        "PROPER_NAME": "刻骨",
+        "NAMES": [
+            "刻骨",
+            "刻骨的"
+        ],
+        "DESCRIPTION": "此卡不能从卡组中移除."
+    }
+}
