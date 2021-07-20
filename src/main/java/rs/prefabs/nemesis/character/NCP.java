@@ -36,7 +36,7 @@ public final class NCP {
                 CardID.DivineWrath, CardID.CastawayWeapon, CardID.CorruptorDisguise
         };
         Ghoscythes = new int[] {
-                CardID.Ghoscythe_Bouncing, CardID.Ghoscythe_MagicAbsorb, CardID.Ghoscythe_Cursed
+                CardID.Ghoscythe_Bouncing, CardID.Ghoscythe_MagicAbsorb, CardID.Ghoscythe_Cursed, CardID.Ghoscythe_Powered
         };
         Ascenders = new int[] {
                 CardID.TraitorCloak, CardID.CastawayWeapon, CardID.CorruptorDisguise
@@ -126,6 +126,11 @@ public final class NCP {
         generals.add(new RuleOfSacrifice());
         generals.add(new ExileToTheVoid());
         generals.add(new SpectralDeluge()); // Moved from uncommon
+        generals.add(new Soultaker());
+        generals.add(new WoundedBasalt());
+        generals.add(new ReviveTheDead());
+        generals.add(new DeadmanTotem());
+        generals.add(new Ghoscythe_Powered());
         //TODO: Need an array to sort all of cards
         
         temps.add(new RottenBone());

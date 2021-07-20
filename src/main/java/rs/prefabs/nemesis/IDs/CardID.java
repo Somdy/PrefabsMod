@@ -75,6 +75,11 @@ public final class CardID {
     public static final int OfferingManagement = 68;
     public static final int Impatience = 69;
     public static final int Ghoscythe_Cursed = 70;
+    public static final int Soultaker = 71;
+    public static final int WoundedBasalt = 72;
+    public static final int ReviveTheDead = 73;
+    public static final int DeadmanTotem = 74;
+    public static final int Ghoscythe_Powered = 75;
     
     public static final int RottenBone = 180;
     public static final int Multinstances = 181;

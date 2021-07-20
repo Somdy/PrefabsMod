@@ -97,6 +97,11 @@ public abstract class AbstractPrefabCard extends CustomCard implements GeneralUt
         return inEnemyUse.test(card);
     }
     
+    public final void setEnemyUsing(@NotNull AbstractCreature enemyUser) {
+        this.enemyUser = enemyUser;
+        inEnemyUse = c -> this.enemyUser != null && !this.enemyUser.isDeadOrEscaped();
+    }
+    
     protected boolean canAssignBasics() {
         return !(this instanceof TemplateItem) && !this.getClass().isAnnotationPresent(Replaced.class);
     }

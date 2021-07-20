@@ -24,8 +24,8 @@ public class ExileToTheVoid extends AbstractNesGeneralCard {
         exiles = 0;
         exiled = false;
         cardsToPreview = new ExileToTheVoid(true);
-        if (!OfferHelper.unofferableCards.contains(this))
-            OfferHelper.unofferableCards.add(this);
+        if (!OfferHelper.UnofferableCards.contains(this))
+            OfferHelper.UnofferableCards.add(this);
         addTip(MSG[0], MSG[1]);
     }
     
@@ -103,8 +103,8 @@ public class ExileToTheVoid extends AbstractNesGeneralCard {
         removeTip(MSG[0], MSG[1]);
         cardsToPreview = null;
         exiled = true;
-        if (!OfferHelper.unofferableCards.contains(this))
-            OfferHelper.unofferableCards.add(this);
+        if (!OfferHelper.UnofferableCards.contains(this))
+            OfferHelper.UnofferableCards.add(this);
         return this;
     }
 

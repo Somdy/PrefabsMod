@@ -50,10 +50,10 @@ public class OfferHelper {
     public static Vector2[] slots;
     public static OfferingHitbox[] hbs;
     public static BobEffect[] bobs;
-    public static Map<AbstractCard, Integer> offerLogics;
+    public static Map<AbstractCard, Integer> OfferLogics;
     public static List<OfferingSideEffect<AbstractCard, Consumer<AbstractCard>, OfferingSideEffectDescription>> sideEffects;
-    public static List<AbstractCard> cardsOfferedThisCombat;
-    public static List<AbstractCard> unofferableCards;
+    public static List<AbstractCard> CardsOfferedThisCombat;
+    public static List<AbstractCard> UnofferableCards;
     
     static {
         offerScale = 0.35F;
@@ -72,10 +72,10 @@ public class OfferHelper {
         hbs = new OfferingHitbox[maxSlot];
         bobs = new BobEffect[maxSlot];
         offers = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        offerLogics = new HashMap<>();
+        OfferLogics = new HashMap<>();
         sideEffects = new ArrayList<>();
-        cardsOfferedThisCombat = new ArrayList<>();
-        unofferableCards = new ArrayList<>();
+        CardsOfferedThisCombat = new ArrayList<>();
+        UnofferableCards = new ArrayList<>();
     }
     
     public static void initPreBattle() {
@@ -86,19 +86,46 @@ public class OfferHelper {
         initSlotHbs();
         Arrays.fill(bobs, new BobEffect(0.5F));
         offers.clear();
-        offerLogics.clear();
+        OfferLogics.clear();
         sideEffects.clear();
-        cardsOfferedThisCombat.clear();
-        unofferableCards.clear();
+        CardsOfferedThisCombat.clear();
+        UnofferableCards.clear();
+    }
+
+    public static void ResizeOfferingBox(int delta) {
+        if (delta > 0)
+            incrsMaxOfferingBox(delta);
+        else if (delta < 0)
+            decrsMaxOfferingBox(delta);
+    }
+
+    private static void decrsMaxOfferingBox(int decrement) {
+        if (maxSlot - decrement <= 0) {
+            NesDebug.Log("There must be at least an offering box left");
+            return;
+        }
+        maxSlot -= decrement;
+        initSlotVectors();
+        initSlotHbs();
+        bobs = new BobEffect[maxSlot];
+        Arrays.fill(bobs, new BobEffect(0.5F));
+    }
+
+    private static void incrsMaxOfferingBox(int increment) {
+        maxSlot += increment;
+        initSlotVectors();
+        initSlotHbs();
+        bobs = new BobEffect[maxSlot];
+        Arrays.fill(bobs, new BobEffect(0.5F));
     }
     
     public static void clearPostBattle() {
         if (valid) {
             offers.clear();
-            offerLogics.clear();
+            OfferLogics.clear();
             sideEffects.clear();
-            cardsOfferedThisCombat.clear();
-            unofferableCards.clear();
+            CardsOfferedThisCombat.clear();
+            UnofferableCards.clear();
             valid = false;
         }
     }
@@ -122,7 +149,7 @@ public class OfferHelper {
         }
     }
     
-    public static boolean hasEmptySlot() {
+    public static boolean HasEmptySlot() {
         if (offers != null)
             return offers.size() - 1 < maxSlot && Arrays.stream(hbs).anyMatch(hb -> !hb.isOccupied());
         return false;
@@ -131,8 +158,8 @@ public class OfferHelper {
     public static boolean AddOffering(AbstractCard card, int turnsLeft, Consumer<AbstractCard> sideEffect,
                                       OfferingSideEffectDescription sideEffectDescription) {
         if (!CanOffer()) return false;
-        if (!hasEmptySlot()) return false;
-        if (unofferableCards.contains(card)) return false;
+        if (!HasEmptySlot()) return false;
+        if (UnofferableCards.contains(card)) return false;
         contactPowersBeforeCardPutOnOffer(card, turnsLeft, sideEffect);
         card.beginGlowing();
         card.targetAngle = 0F;
@@ -156,7 +183,7 @@ public class OfferHelper {
         return AddOffering(card, turnsLeft, null, null);
     }
     
-    public static List<AbstractCard> getOfferings() {
+    public static List<AbstractCard> GetOfferings() {
         return offers.group;
     }
 
@@ -197,7 +224,7 @@ public class OfferHelper {
     }
     
     private static void addOfferingLogic(AbstractCard card, int turnsLeft) {
-        offerLogics.put(card, turnsLeft);
+        OfferLogics.put(card, turnsLeft);
     }
 
     private static void contactCardsOnAddingOffering(AbstractCard offering) {
@@ -261,7 +288,7 @@ public class OfferHelper {
             card.update();
             card.updateHoverLogic();
             updateCardHoverLogic(card);
-            if (!offerLogics.containsKey(card)) {
+            if (!OfferLogics.containsKey(card)) {
                 NesDebug.Log(card.name + " has no offering logics, would be set to 1.");
                 addOfferingLogic(card, 1);
             }
@@ -286,7 +313,7 @@ public class OfferHelper {
                 if ((offers.group.size() - 1 < i || (offers.group.size() - 1 >= i && offers.group.get(i) == null))) 
                     TipHelper.renderGenericTip(hbs[i].x + 90F * Settings.xScale, hbs[i].y - 20F * Settings.yScale, TEXT[0], TEXT[1]);
                 else if (offers.group.size() - 1 >= i && offers.group.get(i) != null) {
-                    PowerTip tip = constructDescription(offers.group.get(i), offerLogics.get(offers.group.get(i)));
+                    PowerTip tip = constructDescription(offers.group.get(i), OfferLogics.get(offers.group.get(i)));
                     TipHelper.renderGenericTip(hbs[i].x + (hoveringCard ? 100F : 90F) * Settings.xScale, 
                             hbs[i].y - (hoveringCard ? 30F : 20F) * Settings.yScale, tip.header, tip.body);
                 }
@@ -325,15 +352,15 @@ public class OfferHelper {
         List<AbstractCard> toRemove = new ArrayList<>();
         for (AbstractCard card : offers.group) {
             if (card instanceof TotemOffering) continue;
-            if (!offerLogics.containsKey(card)) continue;
-            int turnsLeft = offerLogics.get(card);
+            if (!OfferLogics.containsKey(card)) continue;
+            int turnsLeft = OfferLogics.get(card);
             if (turnsLeft > 1) {
                 turnsLeft--;
-                offerLogics.replace(card, turnsLeft);
+                OfferLogics.replace(card, turnsLeft);
             } else if (!toRemove.contains(card)) {
                 NesDebug.Log("Removing " + card.name + " from offer slots, it's done.");
                 toRemove.add(card);
-                offerLogics.remove(card, offerLogics.get(card));
+                OfferLogics.remove(card, OfferLogics.get(card));
                 hbs[offers.group.indexOf(card)].setOccupied(false);
             }
         }
@@ -352,6 +379,7 @@ public class OfferHelper {
                     ((DivineOffering) card).triggerDivineEffect();
                     offers.removeCard(card);
                 }
+                CardsOfferedThisCombat.add(card);
                 contactCardsOnOfferingExhausted(card);
                 List<OfferingSideEffect<AbstractCard, Consumer<AbstractCard>, OfferingSideEffectDescription>> remove = new ArrayList<>();
                 for (OfferingSideEffect<AbstractCard, Consumer<AbstractCard>, OfferingSideEffectDescription> effect : sideEffects) {
@@ -369,7 +397,7 @@ public class OfferHelper {
         PrefabMgr.cleanAfterJobsDone();
     }
     
-    public static boolean destroyOffering(AbstractCard card) {
+    public static boolean DestroyOffering(AbstractCard card) {
         if (!offers.contains(card)) return false;
         boolean canDestroy = true;
         if (card instanceof TotemOffering)
@@ -377,7 +405,7 @@ public class OfferHelper {
         if (canDestroy) {
             hbs[offers.group.indexOf(card)].setOccupied(false);
             offers.removeCard(card);
-            boolean success = offerLogics.remove(card, offerLogics.get(card));
+            boolean success = OfferLogics.remove(card, OfferLogics.get(card));
             if (success) {
                 if (card instanceof UndeadOffering)
                     ((UndeadOffering) card).triggerUndeadEffect();
@@ -391,6 +419,18 @@ public class OfferHelper {
             NesDebug.Log(card, "Indestructible totem...");
         }
         return false;
+    }
+    
+    public static void RemoveAllOfferings() {
+        List<AbstractCard> tmp = new ArrayList<>(offers.group);
+        for (AbstractCard card : tmp) {
+            if (offers.group.contains(card)) {
+                hbs[offers.group.indexOf(card)].setOccupied(false);
+                offers.removeCard(card);
+            }
+        }
+        OfferLogics.clear();
+        AdjustOfferingSlots();
     }
     
     private static void contactCardsOnOfferingExhausted(AbstractCard offering) {
@@ -441,6 +481,16 @@ public class OfferHelper {
         CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         if (!offers.isEmpty()) {
             for (AbstractCard card : offers.group) {
+                tmp.addToBottom(card.makeStatEquivalentCopy());
+            }
+        }
+        return tmp;
+    }
+    
+    public static CardGroup GetCardsOfferedThisCombat() {
+        CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        if (!CardsOfferedThisCombat.isEmpty()) {
+            for (AbstractCard card : CardsOfferedThisCombat) {
                 tmp.addToBottom(card.makeStatEquivalentCopy());
             }
         }

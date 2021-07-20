@@ -794,7 +794,7 @@
         </SData>
         <SData sn = "72">
             <id>WoundedBasalt</id>
-            <magics base = "6" prmt = "4"/>
+            <magics base = "4" prmt = "2"/>
             <cost base = "1"/>
             <type>ATTACK</type>
             <target>ALL ENEMY</target>
@@ -833,7 +833,7 @@
             <id>Ghoscythe_Powered</id>
             <damage base = "12" prmt = "2"/>
             <magics base = "2" prmt = "2"/>
-            <cost base = "2"/>
+            <cost base = "3"/>
             <type>ATTACK</type>
             <target>ALL ENEMY</target>
             <rarity>RARE</rarity>

@@ -32,7 +32,7 @@ public class TemporalIsolation extends AbstractNesGeneralCard {
                         if (canTriggerEnchantedEffect() && indexOfCard == 0) card.selfRetain = true;
                         card.shuffleBackIntoDrawPile = true;
                         isolateds.add(card);
-                        if (upgraded) OfferHelper.unofferableCards.add(card);
+                        if (upgraded) OfferHelper.UnofferableCards.add(card);
                         return true;
                     }
                 })

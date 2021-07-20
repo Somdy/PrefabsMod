@@ -115,7 +115,11 @@ public abstract class AbstractNesCard extends AbstractPrefabCard implements NesG
         setInitialCardName(FAKENAME);
         setInitialRawDesc(DESCRIPTION);
         initTags();
+        
+        onInit();
     }
+    
+    protected void onInit() {}
 
     @Override
     public Map<String, String> onSave() {
@@ -491,7 +495,7 @@ public abstract class AbstractNesCard extends AbstractPrefabCard implements NesG
     }
     
     protected boolean isCardOfferable(AbstractCard card) {
-        return !OfferHelper.unofferableCards.contains(card);
+        return !OfferHelper.UnofferableCards.contains(card);
     }
 
     @Override

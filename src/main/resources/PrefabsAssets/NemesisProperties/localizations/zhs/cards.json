@@ -1192,8 +1192,8 @@
     "nemesismod:WoundedBasalt": {
         "FAKENAME": "磨损的玄武岩",
         "TRUENAME": "盐碱化石",
-        "DESCRIPTION": "标记所有受伤的敌人 !M! 回合.你对被标记敌人造成攻击伤害时,目标额外受到一次 !ExMagics! 点固定伤害.",
-        "UPGRADE_DESCRIPTION": "标记所有受伤的敌人 !M! 回合.你对被标记敌人造成攻击伤害时,目标额外受到一次 !ExMagics! 点固定伤害.",
+        "DESCRIPTION": "标记所有受伤的敌人 !M! 回合. NL 你对被标记敌人造成攻击伤害时,目标额外受到一次 !ExMagics! 点固定伤害.",
+        "UPGRADE_DESCRIPTION": "标记所有受伤的敌人 !M! 回合. NL 你对被标记敌人造成攻击伤害时,目标额外受到一次 !ExMagics! 点固定伤害.",
         "EXTENDED_DESCRIPTION": [
             ""
         ],
@@ -1205,13 +1205,16 @@
     "nemesismod:ReviveTheDead": {
         "FAKENAME": "唤醒",
         "TRUENAME": "冥土追魂",
-        "DESCRIPTION": "移除当前祭品位上所有祭品,然后从本局对战中完成献祭的祭品中随机选取最多 !M! 个重新 nemesismod:献祭 .",
-        "UPGRADE_DESCRIPTION": "移除当前祭品位上所有祭品,然后从本局对战中完成献祭的祭品中选取最多 !M! 个重新 nemesismod:献祭 .",
+        "DESCRIPTION": "移除当前祭品位上所有祭品,然后从本局对战中完成献祭的祭品中随机选取最多 !M! 个重新 nemesismod:献祭 2回合.",
+        "UPGRADE_DESCRIPTION": "移除当前祭品位上所有祭品,然后从本局对战中完成献祭的祭品中选取最多 !M! 个重新 nemesismod:献祭 2回合.",
         "EXTENDED_DESCRIPTION": [
             " NL 额外获得1个祭品位.",
             ""
         ],
         "MSG": [
+            "选择最多",
+            "张来献祭",
+            "回合",
             ""
         ]
     },
@@ -1219,10 +1222,9 @@
     "nemesismod:DeadmanTotem": {
         "FAKENAME": "死物图腾",
         "TRUENAME": "逝者遗物",
-        "DESCRIPTION": "保留 . NL 获得 !B! 点 格挡 和 !M! 层 脆弱. nemesismod:图腾 :你的回合结束时,如果有任何负面效果,获得 !B! 点 格挡 .",
-        "UPGRADE_DESCRIPTION": "保留 . NL 获得 !B! 点 格挡 和 !M! 层 脆弱. nemesismod:图腾 :你的回合结束时,如果有任何负面效果,获得 !B! 点 格挡 .",
+        "DESCRIPTION": "保留 . NL 获得 !B! 点 格挡 和 !M! 层 脆弱. nemesismod:图腾 :你的回合开始时,如果有任何负面效果,获得 !B! 点 格挡 .",
+        "UPGRADE_DESCRIPTION": "保留 . NL 获得 !B! 点 格挡 和 !M! 层 脆弱. nemesismod:图腾 :你的回合开始时,如果有任何负面效果,获得 !B! 点 格挡 .",
         "EXTENDED_DESCRIPTION": [
-            " NL 额外获得1个祭品位.",
             ""
         ],
         "MSG": [
@@ -1232,14 +1234,15 @@
 
     "nemesismod:Ghoscythe_Powered": {
         "FAKENAME": "鬼斩",
-        "TRUENAME": "鬼斩·强刃",
-        "DESCRIPTION": "保留 . NL 获得 !B! 点 格挡 和 !M! 层 脆弱. nemesismod:图腾 :你的回合结束时,如果有任何负面效果,获得 !B! 点 格挡 .",
-        "UPGRADE_DESCRIPTION": "保留 . NL 获得 !B! 点 格挡 和 !M! 层 脆弱. nemesismod:图腾 :你的回合结束时,如果有任何负面效果,获得 !B! 点 格挡 .",
+        "TRUENAME": "鬼斩·超魔",
+        "DESCRIPTION": "对所有敌人造成 !D! 点伤害,然后触发下列随机效果之一:抽2张牌;获得 !M! 层 nemesismod:灵体 ;获得1层 *缓冲 ;给予所有敌人2层 虚弱 .",
+        "UPGRADE_DESCRIPTION": "*强魔 .对所有敌人造成 !D! 点伤害,然后触发下列随机效果之一:抽2张牌;获得 !M! 层 nemesismod:灵体 ;获得1层 *缓冲 ;给予所有敌人2层 虚弱 .",
         "EXTENDED_DESCRIPTION": [
-            " NL 额外获得1个祭品位.",
             ""
         ],
         "MSG": [
+            "强魔",
+            "如果你身上有且仅有正面效果,此卡额外效果会触发两次.",
             ""
         ]
     }

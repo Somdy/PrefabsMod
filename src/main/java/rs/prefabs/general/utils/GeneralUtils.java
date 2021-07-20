@@ -257,6 +257,10 @@ public interface GeneralUtils {
         SecurityRunner<Boolean> sr = new SecurityRunner<>(Boolean.FALSE).setActions(action).setExcpActions(exceptionAction);
         return sr.execute();
     }
+    
+    default boolean isCreatureWounded(@NotNull AbstractCreature crt) {
+        return crt.currentHealth < crt.maxHealth && !crt.isDeadOrEscaped();
+    }
 
     default boolean areMstrBasicallyDead() {
         return AbstractDungeon.getMonsters().areMonstersBasicallyDead();

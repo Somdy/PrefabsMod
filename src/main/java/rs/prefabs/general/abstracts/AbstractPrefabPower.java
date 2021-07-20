@@ -5,12 +5,15 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import rs.prefabs.general.cards.DamageSource;
+import rs.prefabs.general.misc.PrefabDmgInfo;
 import rs.prefabs.general.utils.Debugger;
 import rs.prefabs.general.utils.GeneralUtils;
 
@@ -133,6 +136,14 @@ public abstract class AbstractPrefabPower extends AbstractPower implements Clone
             FontHelper.renderFontRightTopAligned(sb, FontHelper.powerAmountFont, Integer.toString(this.extraAmt),
                     x, y + 16.0F * Settings.scale, extraAmtFontScale, c);
         }
+    }
+
+    protected PrefabDmgInfo crtDmgInfo(AbstractCreature source, int base, DamageInfo.DamageType type) {
+        return new PrefabDmgInfo(crtDmgSrc(source), base, type);
+    }
+
+    protected DamageSource crtDmgSrc(AbstractCreature source) {
+        return new DamageSource(source);
     }
     
     protected void Log(Object what) {
