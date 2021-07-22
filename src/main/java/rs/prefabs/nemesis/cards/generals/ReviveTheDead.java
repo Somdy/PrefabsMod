@@ -2,8 +2,10 @@ package rs.prefabs.nemesis.cards.generals;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rs.prefabs.general.actions.common.SimpleGridCardSelectBuilder;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import rs.prefabs.general.actions.utility.SimpleGridCardSelectBuilder;
 import rs.prefabs.general.actions.utility.DelayAction;
 import rs.prefabs.general.actions.utility.QuickAction;
 import rs.prefabs.general.tools.GridCardManipulator;

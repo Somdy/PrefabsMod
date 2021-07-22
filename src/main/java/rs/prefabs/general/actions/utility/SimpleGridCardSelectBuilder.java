@@ -1,4 +1,4 @@
-package rs.prefabs.general.actions.common;
+package rs.prefabs.general.actions.utility;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;

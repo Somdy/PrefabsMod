@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 import java.util.function.Predicate;
 
+@Deprecated
 public class PrefabData {
     private Properties properties;
     private List<Object> objects;

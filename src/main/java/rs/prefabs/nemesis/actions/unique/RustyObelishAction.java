@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import rs.prefabs.general.abstracts.AbstractPrefabGameAction;
-import rs.prefabs.general.actions.common.SimpleHandCardSelectBuilder;
+import rs.prefabs.general.actions.utility.SimpleHandCardSelectBuilder;
 import rs.prefabs.general.actions.utility.DelayAction;
 import rs.prefabs.general.tools.HandCardManipulator;
 

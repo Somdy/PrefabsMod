@@ -1,9 +1,9 @@
-package rs.prefabs.general.actions.common;
+package rs.prefabs.general.actions.utility;
 
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import rs.prefabs.general.abstracts.AbstractPrefabGameAction;
+import rs.prefabs.general.utils.Debugger;
 import rs.prefabs.nemesis.NesDebug;
 
 import java.util.HashMap;
@@ -67,7 +67,7 @@ public class SimpleXCostActionBuilder extends AbstractPrefabGameAction {
     @Override
     public void update() {
         if (!built) {
-            NesDebug.Log(this, "Not finally built yet, not allowed any effects");
+            Debugger.Log(this, "Not finally built yet, not allowed any effects");
             isDone = true;
             return;
         }

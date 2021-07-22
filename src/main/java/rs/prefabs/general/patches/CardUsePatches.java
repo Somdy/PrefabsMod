@@ -11,7 +11,7 @@ import rs.prefabs.general.utils.Debugger;
 
 import java.util.ArrayList;
 
-public class UseCardPatches {
+public class CardUsePatches {
     @SpirePatch(clz = AbstractCard.class, method = "canUse")
     public static class CustomCanUseCardLogicPatch {
         @SpirePrefixPatch

@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rs.prefabs.general.actions.common.SimpleHandCardSelectBuilder;
+import rs.prefabs.general.actions.utility.SimpleHandCardSelectBuilder;
 import rs.prefabs.general.annotations.Replaced;
 import rs.prefabs.general.tools.HandCardManipulator;
 import rs.prefabs.nemesis.character.OfferHelper;

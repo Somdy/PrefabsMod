@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
-import rs.prefabs.general.actions.common.SimpleHandCardSelectBuilder;
+import rs.prefabs.general.actions.utility.SimpleHandCardSelectBuilder;
 import rs.prefabs.general.tools.HandCardManipulator;
 import rs.prefabs.nemesis.character.OfferHelper;
 import rs.prefabs.nemesis.interfaces.OfferingContacter;

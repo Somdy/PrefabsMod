@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import org.jetbrains.annotations.NotNull;
-import rs.prefabs.general.actions.common.SimpleXCostActionBuilder;
+import rs.prefabs.general.actions.utility.SimpleXCostActionBuilder;
 import rs.prefabs.nemesis.powers.MultinstancesPower;
 
 public class Multinstances extends AbstractNesTempCard {

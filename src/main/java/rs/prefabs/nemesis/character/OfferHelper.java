@@ -46,6 +46,7 @@ public class OfferHelper {
     private static float SLOT_HEIGHT;
     private static boolean valid;
     private static CardGroup offers;
+    private static int baseMaxSlot;
     public static int maxSlot;
     public static Vector2[] slots;
     public static OfferingHitbox[] hbs;
@@ -67,7 +68,8 @@ public class OfferHelper {
         hoveringCard = false;
         valid = false;
         SLOT_HEIGHT = 420F * Settings.yScale;
-        maxSlot = 4;
+        baseMaxSlot = 4;
+        maxSlot = baseMaxSlot;
         slots = new Vector2[maxSlot];
         hbs = new OfferingHitbox[maxSlot];
         bobs = new BobEffect[maxSlot];
@@ -121,6 +123,7 @@ public class OfferHelper {
     
     public static void clearPostBattle() {
         if (valid) {
+            maxSlot = baseMaxSlot;
             offers.clear();
             OfferLogics.clear();
             sideEffects.clear();

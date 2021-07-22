@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rs.prefabs.general.actions.common.SimpleGridCardSelectBuilder;
+import rs.prefabs.general.actions.utility.SimpleGridCardSelectBuilder;
 import rs.prefabs.general.tools.GridCardManipulator;
 import rs.prefabs.nemesis.character.OfferHelper;
 

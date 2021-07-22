@@ -80,7 +80,8 @@ public class BetterDamageAllEnemiesAction extends AbstractPrefabGameAction {
                         m.tint.color.set(Color.RED.cpy());
                         m.tint.changeColor(Color.WHITE.cpy());
                     }
-                    m.damage(infos[i]);
+                    final PrefabDmgInfo info = i > infos.length - 1 ? infos[infos.length - 1] : infos[i];
+                    m.damage(info);
                     if (infos[i].source.isLeech() && m.lastDamageTaken > 0) {
                         int healAmt = MathUtils.floor(m.lastDamageTaken / 2F);
                         addToTop(new HealAction(infos[i].source.getSource(), infos[i].source.getSource(), healAmt));

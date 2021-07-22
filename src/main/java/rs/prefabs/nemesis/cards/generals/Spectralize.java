@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import rs.prefabs.general.actions.utility.DelayAction;
-import rs.prefabs.general.actions.common.SimpleHandCardSelectBuilder;
+import rs.prefabs.general.actions.utility.SimpleHandCardSelectBuilder;
 import rs.prefabs.general.annotations.Replaced;
 import rs.prefabs.general.listeners.UseCardListener;
 import rs.prefabs.general.tools.HandCardManipulator;

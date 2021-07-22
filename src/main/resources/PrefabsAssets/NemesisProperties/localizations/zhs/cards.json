@@ -850,6 +850,20 @@
         ]
     },
 
+    "nemesismod:DeadReturns": {
+        "FAKENAME": "亡魂复苏",
+        "TRUENAME": "归冥斩",
+        "DESCRIPTION": "给予所有角色 !M! 层 nemesismod:腐朽 和 nemesismod:麻木 . NL nemesismod:图腾 :受伤的角色无法回复生命值.",
+        "UPGRADE_DESCRIPTION": "给予所有角色 !M! 层 nemesismod:腐朽 和 nemesismod:麻木 . NL nemesismod:图腾 :受伤的角色若具有负面效果则回复的生命值翻倍,否则无法回复生命值.",
+        "EXTENDED_DESCRIPTION": [
+            " NL 获得1层 人工制品 .",
+            ""
+        ],
+        "MSG": [
+            ""
+        ]
+    },
+
     "nemesismod:Cacophony": {
         "FAKENAME": "杂音",
         "TRUENAME": "魔能杂音",

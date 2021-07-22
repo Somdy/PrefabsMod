@@ -9,7 +9,6 @@ import rs.prefabs.general.abstracts.AbstractPrefabGameAction;
 import rs.prefabs.general.vfx.combat.CardAboveCreatureEffect;
 
 public class CardAboveCreatureAction extends AbstractPrefabGameAction {
-    private AbstractCreature target;
     private AbstractCard card;
     private boolean showed;
 

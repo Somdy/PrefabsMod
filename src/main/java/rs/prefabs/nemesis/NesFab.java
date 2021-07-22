@@ -4,7 +4,6 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
-import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -27,8 +26,6 @@ import rs.prefabs.nemesis.dynamics.NesWitherNum;
 import rs.prefabs.nemesis.localizations.NesLocalizedStrings;
 import rs.prefabs.nemesis.patches.NesCardEnum;
 import rs.prefabs.nemesis.patches.NesCustomEnum;
-import rs.prefabs.nemesis.relics.DecadentHomiliary;
-import rs.prefabs.nemesis.relics.OldCenser;
 import rs.prefabs.nemesis.utils.NesImageMst;
 import rs.prefabs.nemesis.utils.Nesinitializer;
 
@@ -184,7 +181,7 @@ public class NesFab implements GeneralUtils, EditCharactersSubscriber, EditCards
         BaseMod.addAudio(NesFab.makeID("Nemesis_Awk"), "PrefabsAssets/NemesisProperties/audio/Awaken_Nemesis.ogg");
         BaseMod.addAudio(NesFab.makeID("Nemesis_Atk_v1"), "PrefabsAssets/NemesisProperties/audio/Nemesis_Attack_v1.ogg");
         BaseMod.addAudio(NesFab.makeID("Nemesis_Atk_v2"), "PrefabsAssets/NemesisProperties/audio/Nemesis_Attack_v2.ogg");
-        BaseMod.addAudio(NesFab.makeID("Nullify_EXT"), "PrefabsAssets/NemesisProperties/audio/SFX_Nullify_EXT.ogg");
+        BaseMod.addAudio(NesFab.makeID("Nullify_EXT"), "PrefabsAssets/GeneralProperties/audio/SFX_Nullify_EXT.ogg");
         BaseMod.addAudio(NesFab.makeID("Psychic_SFX"), "PrefabsAssets/NemesisProperties/audio/SFX_Psychic_v1.ogg");
     }
 

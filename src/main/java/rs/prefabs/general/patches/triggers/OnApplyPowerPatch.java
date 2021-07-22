@@ -38,19 +38,6 @@ public class OnApplyPowerPatch {
 
     private static SpireReturn InsertManipulator(@NotNull AbstractGameAction action, AbstractCreature target, AbstractCreature source,
                                                  @NotNull AbstractPower[] power, float[] duration) {
-        /*int originAmount = power.amount;
-        for (AbstractCard card : OfferHelper.getOfferings()) {
-            if (card instanceof TotemOffering) {
-                int modifiedAmount = ((TotemOffering) card).onApplyPower(power, target, source);
-                if (modifiedAmount != originAmount) {
-                    Debugger.Log(power.name + "'s amount modified by " + card.name + " from " + originAmount + " to " + modifiedAmount);
-                    power.amount = modifiedAmount;
-                    power.updateDescription();
-                    if (power.amount != action.amount)
-                        action.amount = power.amount;
-                }
-            }
-        }*/
         power[0] = ApplyPowerListener.onApplyPower(power[0], target, source);
         if (power[0] != null && power[0].amount != action.amount)
             action.amount = power[0].amount;

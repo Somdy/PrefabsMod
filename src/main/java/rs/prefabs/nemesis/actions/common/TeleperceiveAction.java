@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import rs.prefabs.general.abstracts.AbstractPrefabGameAction;
-import rs.prefabs.general.actions.common.SimpleGridCardSelectBuilder;
+import rs.prefabs.general.actions.utility.SimpleGridCardSelectBuilder;
 import rs.prefabs.general.tools.GridCardManipulator;
 import rs.prefabs.nemesis.NesDebug;
 import rs.prefabs.nemesis.NesFab;

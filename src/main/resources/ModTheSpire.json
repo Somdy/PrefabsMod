@@ -2,8 +2,8 @@
     "modid": "PrefabsMod",
     "name": "[天罚]TheNemesis",
     "author_list": ["Somdy"],
-    "description": "This is my first mod. Welcome to play!",
-    "version": "0.0.19",
+    "description": "This is my first mod. Welcome to play!\nMod源码：https://github.com/Somdy/PrefabsMod",
+    "version": "0.0.2",
     "sts_version": "12-22-2020",
     "mts_version": "3.22.0",
     "dependencies": ["basemod"]

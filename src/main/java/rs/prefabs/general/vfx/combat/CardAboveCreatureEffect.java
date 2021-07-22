@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.jetbrains.annotations.NotNull;
 import rs.prefabs.general.abstracts.AbstractPrefabGameEffect;
 
 public class CardAboveCreatureEffect extends AbstractPrefabGameEffect {
@@ -13,7 +14,7 @@ public class CardAboveCreatureEffect extends AbstractPrefabGameEffect {
     private final float x;
     private float y;
 
-    public CardAboveCreatureEffect(AbstractCreature target, AbstractCard card) {
+    public CardAboveCreatureEffect(AbstractCreature target, @NotNull AbstractCard card) {
         this.card = card.makeStatEquivalentCopy();
         this.card.drawScale = 0.01F;
         this.card.targetDrawScale = 0.45F;

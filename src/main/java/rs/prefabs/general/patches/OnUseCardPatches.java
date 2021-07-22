@@ -25,6 +25,7 @@ public class OnUseCardPatches {
                 targetCard.setAccessible(true);
                 AbstractCard card = (AbstractCard) targetCard.get(_inst);
                 Prefabscriber.publishCardPlayed(card, _inst);
+                UseCardListener.onCardPlayed(card, _inst);
             }
         }
         private static class Locator extends SpireInsertLocator {

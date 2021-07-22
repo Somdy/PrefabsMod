@@ -1,4 +1,4 @@
-package rs.prefabs.general.actions.common;
+package rs.prefabs.general.actions.utility;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -89,7 +89,7 @@ public class SimpleHandCardSelectBuilder extends AbstractPrefabGameAction {
         this.canPickZero = canPickZero;
         return this;
     }
-    
+
     public SimpleHandCardSelectBuilder setForUpgrade(boolean forUpgrade) {
         this.forUpgrade = forUpgrade;
         return this;

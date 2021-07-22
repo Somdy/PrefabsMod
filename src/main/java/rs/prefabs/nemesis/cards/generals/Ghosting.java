@@ -3,7 +3,7 @@ package rs.prefabs.nemesis.cards.generals;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import rs.prefabs.general.actions.common.SimpleXCostActionBuilder;
+import rs.prefabs.general.actions.utility.SimpleXCostActionBuilder;
 import rs.prefabs.general.actions.utility.DelayAction;
 import rs.prefabs.general.actions.utility.QuickAction;
 import rs.prefabs.nemesis.cards.temps.Multinstances;
